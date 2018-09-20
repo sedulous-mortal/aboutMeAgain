@@ -1,0 +1,193 @@
+html {
+    background: #393e46;
+     font-family: "Georgia";
+}
+
+.circle-icon{
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 60px;
+    height: 150px;
+}
+.intro{
+    font-weight: 300;
+    font-size: 18px;
+    font-kerning: auto;
+}
+
+#me, #you, #contact {
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 10%;
+}
+
+.toolbox{
+    padding-top: 30px;
+    z-index: 1;
+}
+
+.toolbox-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toolbox-contents{
+    position: fixed;
+    margin-top: 112px;
+    display: flex;
+    flex-direction: row wrap;
+    z-index: 2;
+}
+
+#main {
+    min-height: 100%;
+    color: #FF7F00;
+    margin-left: 15em;
+    width: 70%;
+    max-width: 50em;
+}
+
+#main p {
+    color: #f2f2f2;
+    }
+
+#menu_bar ul {
+    border-bottom: 1px solid #222;
+    padding-left: 0px;
+}
+
+h2{
+    width:100%;
+    padding-top: 10px;
+}
+
+li{
+    color: #F2F2F2;
+    font-size: 18px;
+}
+
+#menu_bar li,
+#menu_bar h2 {
+    display: block;
+}
+
+li {
+    list-style-type: square;
+}
+
+#menu_bar h2 {
+    color: white;
+    text-align: right;
+    padding: 5px;
+    border-top: none;
+    border-bottom: 3px solid #c75c15;
+}
+
+#menu_bar {
+    background: #222831;
+    box-shadow: 1px 0 0 #222;
+    /*I need some line of code to stick the nav to the top of the browser window as you scroll
+    so that it never disappears*/
+    position: fixed;
+    width: 15em;
+    min-width: 160px;
+    height: 99vh;
+    list-style-type: none;
+    border-right: 2px solid #c75c15;
+}
+
+#menu_bar a {
+    background: #111;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #222;
+    box-shadow: inset -5px 0 0 hsla(0, 0%, 0%, .2), inset 0 20px 0 #161616;
+    color: #bbb;
+    display: block;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 45px;
+    text-align: right;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px hsla(0, 0%, 0%, .5);
+    transition: all 300ms;
+}
+
+#menu_bar a:hover,
+#menu_bar a:focus,
+#menu_bar li.current a {
+    background: #151B1F;
+    border-top-color: #3a3a3a;
+    box-shadow: inset -5px 0 0 #c75c15, inset 0 20px 0 #282828;
+    /*box-shadow: inset -5px 0 0 #3a3a3a, inset 0 20px 0 #282828;*/
+    color: #ddd;
+    outline: 0;
+    padding: 0 30px;
+    transition: all 300ms;
+}
+
+/*
+#menu_bar a:hover .first{
+    box-shadow: inset -5px 0 0 #F5A929, inset 0 20px 0 #282828;
+}
+
+#menu_bar a:hover .second{
+    box-shadow: inset -5px 0 0 #257778, inset 0 20px 0 #282828;
+}
+
+#menu_bar a .third{
+    box-shadow: inset -5px 0 0 #1F5F3F, inset 0 20px 0 #282828;
+}
+*/
+
+#menu_bar li.current a {
+    box-shadow: inset -5px 0 0 #c75c15, inset 0 20px 0 #5f8635;
+    /*box-shadow: inset -5px 0 0 #e00, inset 0 20px 0 #282828;*/
+    padding: 0 45px;
+}
+
+#menu_bar a:active {
+    background: #333;
+    border-top-color: #666;
+    box-shadow: inset -5px 0 0 #666, inset 0 20px 0 #444;
+    color: #fff;
+    transition: all 50ms;
+}
+
+#menu_bar li:first-child a {
+    border-top: none;
+}
+
+#bot_space{
+    width:100%;
+    height: 30em;
+}
+
+@media only screen and (max-width: 640px){
+  #menu_bar{
+        width: 400px;
+    }
+
+    #menu_bar a {
+        height: 100px;
+    }
+    #main{
+        margin-left: 40em;
+    }
+}
+
+@media only screen and (max-width: 360px){
+ #menu_bar{
+        width: 40em;
+    }
+
+    #menu_bar a {
+        height: 100px;
+    }
+    #main{
+        margin-left: 40em;
+    }
+}
+
